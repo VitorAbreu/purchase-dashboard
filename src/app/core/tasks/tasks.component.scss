@@ -1,0 +1,48 @@
+:host {
+  padding: var(--space-4);
+  display: block;
+}
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1,
+  p {
+    color: var(--color-text);
+  }
+}
+mat-card-header {
+  margin-bottom: var(--space-2);
+  mat-card-title {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+mat-card-content {
+  display: flex;
+  gap: var(--space-2);
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+table {
+  td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+}
+
+@media (width <= 425px) {
+  .title-section {
+    flex-direction: column;
+    margin-bottom: var(--space-4);
+  }
+  mat-card-content {
+    flex-direction: column;
+  }
+}

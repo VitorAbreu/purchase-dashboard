@@ -85,5 +85,9 @@ mat-toolbar {
   .hide-on-lg {
     display: flex !important;
     align-items: center;
+    span {
+      font-size: var(--font-size-md);
+      color: var(--color-text);
+    }
   }
 }
