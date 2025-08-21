@@ -8,9 +8,20 @@
       </div>
     </div>
     <div class="button-routes">
-      <button [routerLink]="['/']" type="button" mat-button><mat-icon>task</mat-icon>Tasks</button>
-      <button [routerLink]="['/users']" type="button" mat-button><mat-icon>person</mat-icon>Users</button>
-      <button [routerLink]="['/settings']" type="button" mat-button><mat-icon>settings</mat-icon>Settings</button>
+      <button
+        [routerLink]="['/']"
+        routerLinkActive="activated"
+        [routerLinkActiveOptions]="{ exact: true }"
+        type="button"
+        mat-button>
+        <mat-icon>task</mat-icon>Tasks
+      </button>
+      <button [routerLink]="['/users']" routerLinkActive="activated" type="button" mat-button>
+        <mat-icon>person</mat-icon>Users
+      </button>
+      <button [routerLink]="['/settings']" routerLinkActive="activated" type="button" mat-button>
+        <mat-icon>settings</mat-icon>Settings
+      </button>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -54,6 +54,11 @@ mat-sidenav {
       justify-content: start;
       color: var(--color-text);
     }
+
+    .activated {
+      background-color: var(--color-primary);
+      color: white;
+    }
   }
 }
 mat-toolbar {
