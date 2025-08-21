@@ -10,6 +10,7 @@ import { tasksMock } from '@shared/mocks/tasks.mock';
 import { DatePipe } from '@angular/common';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-tasks',
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     DatePipe,
     MatPaginatorModule,
     MatSortModule,
+    RouterModule,
   ],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.scss',

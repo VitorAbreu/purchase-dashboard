@@ -8,9 +8,9 @@
       </div>
     </div>
     <div class="button-routes">
-      <button type="button" mat-button><mat-icon>task</mat-icon>Tasks</button>
-      <button type="button" mat-button><mat-icon>person</mat-icon>Users</button>
-      <button type="button" mat-button><mat-icon>settings</mat-icon>Settings</button>
+      <button [routerLink]="['/']" type="button" mat-button><mat-icon>task</mat-icon>Tasks</button>
+      <button [routerLink]="['/users']" type="button" mat-button><mat-icon>person</mat-icon>Users</button>
+      <button [routerLink]="['/settings']" type="button" mat-button><mat-icon>settings</mat-icon>Settings</button>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,8 +23,9 @@
         <span>Purchase Requests</span>
       </div>
       <span class="spacer"></span>
-      <button id="toolbar-toggle" type="button" mat-stroked-button aria-label="menu">
-        <mat-icon>wb_sunny</mat-icon>Dark
+      <button (click)="toggleTheme()" id="toolbar-toggle" type="button" mat-stroked-button aria-label="menu">
+        <mat-icon>{{ theme() === 'dark' ? 'wb_sunny' : 'bedtime' }}</mat-icon
+        >{{ theme() === 'dark' ? 'Light' : 'Dark' }}
       </button>
     </mat-toolbar>
     <router-outlet />

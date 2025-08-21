@@ -1,8 +1,10 @@
 mat-sidenav {
   width: 350px;
   border-radius: 0;
+  background-color: var(--color-bg);
   &-container {
     height: 100dvh;
+    background-color: var(--color-bg);
   }
 
   .logo {
@@ -27,9 +29,11 @@ mat-sidenav {
       float: right;
       h1 {
         font-size: var(--font-size-xl);
+        color: var(--color-text);
       }
       p {
         font-size: var(--font-size-lg);
+        color: var(--color-text);
       }
     }
   }
@@ -48,12 +52,14 @@ mat-sidenav {
     button {
       width: 100%;
       justify-content: start;
+      color: var(--color-text);
     }
   }
 }
 mat-toolbar {
   border-bottom: 1px solid var(--border);
   display: flex;
+  background-color: var(--color-bg);
 
   .hide-on-lg {
     display: none;

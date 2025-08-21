@@ -29,12 +29,21 @@ mat-card-content {
 }
 
 table {
+  color: var(--color-text);
+  &.mat-mdc-table,
+  .mat-mdc-header-row,
+  .mat-mdc-row {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
   td {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 200px;
   }
+  // .mat-mdc-header-row {
+  // }
 }
 
 @media (width <= 425px) {

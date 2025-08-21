@@ -11,11 +11,15 @@ export const routes: Routes = [
     loadComponent: () => import('@features/form/form.component').then((mod) => mod.FormComponent),
   },
   {
+    path: 'form/:id',
+    loadComponent: () => import('@features/form/form.component').then((mod) => mod.FormComponent),
+  },
+  {
     path: 'users',
     loadComponent: () => import('@features/users/users.component').then((mod) => mod.UsersComponent),
   },
   {
-    path: 'create',
+    path: 'settings',
     loadComponent: () => import('@features/settings/settings.component').then((mod) => mod.SettingsComponent),
   },
 ];
