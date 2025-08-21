@@ -1,1 +1,33 @@
-<router-outlet />
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side">
+    <div class="logo">
+      <mat-icon id="sidenav-icon">shopping_cart_checkout</mat-icon>
+      <div class="group-text">
+        <h1>Purchase Requests</h1>
+        <p>Dashboard</p>
+      </div>
+    </div>
+    <div class="button-routes">
+      <button type="button" mat-button><mat-icon>task</mat-icon>Tasks</button>
+      <button type="button" mat-button><mat-icon>person</mat-icon>Users</button>
+      <button type="button" mat-button><mat-icon>settings</mat-icon>Settings</button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="hide-on-lg">
+        <button type="button" mat-icon-button aria-label="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-icon id="toolbar-icon">shopping_cart_checkout</mat-icon>
+        <span>Purchase Requests</span>
+      </div>
+      <span class="spacer"></span>
+      <button id="toolbar-toggle" type="button" mat-stroked-button aria-label="menu">
+        <mat-icon>wb_sunny</mat-icon>Dark
+      </button>
+    </mat-toolbar>
+    aa
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>

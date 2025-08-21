@@ -1,0 +1,89 @@
+mat-sidenav {
+  width: 350px;
+  border-radius: 0;
+  &-container {
+    height: 100dvh;
+  }
+
+  .logo {
+    padding: var(--space-8);
+    border: solid 1px var(--border);
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+
+    #sidenav-icon {
+      background-color: var(--color-primary);
+      border-radius: 0.5rem;
+      color: white;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--space-8);
+    }
+
+    .group-text {
+      float: right;
+      h1 {
+        font-size: var(--font-size-xl);
+      }
+      p {
+        font-size: var(--font-size-lg);
+      }
+    }
+  }
+
+  ::ng-deep {
+    div:has(div.button-routes) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .button-routes {
+    border: solid 1px var(--border);
+    padding: var(--space-8);
+    height: 100%;
+
+    button {
+      width: 100%;
+      justify-content: start;
+    }
+  }
+}
+mat-toolbar {
+  border-bottom: 1px solid var(--border);
+  display: flex;
+
+  .hide-on-lg {
+    display: none;
+  }
+
+  #toolbar-icon {
+    color: var(--color-primary);
+    font-size: var(--space-8);
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  #toolbar-toggle {
+    color: var(--color-text);
+  }
+}
+
+@media (1440px > width) {
+  mat-sidenav {
+    display: none;
+  }
+
+  .hide-on-lg {
+    display: flex !important;
+    align-items: center;
+  }
+}

@@ -1,4 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Design Tokens via CSS Custom Properties */
+:root {
+  /* colors */
+  --color-bg: #ffffff;
+  --color-surface: #fafafa;
+  --color-text: #1f2937;
+  --color-muted: #787a7c;
+  --color-primary: #2962ff;
+  --color-accent: #03dac6;
+  --color-danger: #d32f2f;
+  --color-success: #2e7d32;
+  --border: #d7d7d766;
+
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* typography */
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 20px;
+  --radius: 12px;
+}
+
+/* Dark theme */
+:root[data-theme='dark'] {
+  --color-bg: #0b1220;
+  --color-surface: #111827;
+  --color-text: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color-primary: #8ab4ff;
+  --color-accent: #7ff2e3;
+  --color-danger: #ef9a9a;
+  --color-success: #a5d6a7;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
