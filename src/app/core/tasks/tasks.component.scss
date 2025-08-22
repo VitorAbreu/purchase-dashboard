@@ -63,7 +63,26 @@ table {
     }
   }
 }
-
+@media (width <= 768px) {
+  table {
+    td:nth-child(3),
+    th:nth-child(3),
+    td:nth-child(6),
+    th:nth-child(6) {
+      display: none;
+    }
+  }
+}
+@media (width <= 630px) {
+  table {
+    td:nth-child(2),
+    th:nth-child(2),
+    td:nth-child(5),
+    th:nth-child(5) {
+      display: none;
+    }
+  }
+}
 @media (width <= 425px) {
   .title-section {
     flex-direction: column;
