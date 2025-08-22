@@ -56,3 +56,14 @@ body {
   color: var(--color-text);
   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1,
+  p {
+    color: var(--color-text);
+  }
+}

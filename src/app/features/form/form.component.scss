@@ -1,0 +1,71 @@
+:host {
+  padding: var(--space-4);
+  display: block;
+}
+
+#deleteTask {
+  background-color: var(--color-danger);
+}
+
+#back {
+  color: var(--color-text);
+}
+
+mat-chip {
+  &[data-status='In Review'] {
+    background-color: var(--color-review);
+  }
+  &[data-status='In Progress'] {
+    background-color: var(--color-progress);
+  }
+  &[data-status='Backlog'] {
+    background-color: var(--color-backlog);
+  }
+  &[data-status='Pending'] {
+    background-color: var(--color-pending);
+  }
+  &[data-status='Done'] {
+    background-color: var(--color-success);
+  }
+}
+
+.task-form {
+  mat-card {
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+
+    mat-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+
+      .full-width {
+        width: 100%;
+      }
+
+      mat-form-field {
+        width: 100%;
+      }
+    }
+
+    mat-card-actions {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: var(--space-4);
+
+      button {
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  mat-card-content {
+    gap: var(--space-2);
+  }
+
+  mat-card-actions {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,47 @@
+:host {
+  padding: var(--space-4);
+  display: block;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-4);
+}
+
+button[mat-stroked-button] {
+  color: var(--color-text);
+}
+
+mat-card-title {
+  display: flex;
+  gap: var(--space-1);
+}
+
+mat-card {
+  padding: var(--space-3);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--space-4) 0;
+}
+
+.setting-item h4 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.setting-item p {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-lg);
+}
+
+button mat-icon {
+  margin-right: var(--space-1);
+}

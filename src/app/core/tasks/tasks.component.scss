@@ -2,16 +2,6 @@
   padding: var(--space-4);
   display: block;
 }
-.title-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h1,
-  p {
-    color: var(--color-text);
-  }
-}
 mat-card-header {
   margin-bottom: var(--space-2);
   mat-card-title {
@@ -56,6 +46,19 @@ table {
       background-color: var(--color-pending);
     }
     &[data-status='Done'] {
+      background-color: var(--color-success);
+    }
+
+    &[data-status='Critical'] {
+      background-color: var(--color-danger);
+    }
+    &[data-status='High'] {
+      background-color: var(--color-review);
+    }
+    &[data-status='Medium'] {
+      background-color: var(--color-accent);
+    }
+    &[data-status='Low'] {
       background-color: var(--color-success);
     }
   }

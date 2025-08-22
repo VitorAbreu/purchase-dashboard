@@ -1,1 +1,93 @@
-<p>settings works!</p>
+<div class="title-section">
+  <div>
+    <h1>Settings</h1>
+    <p>Manage your application preferences and configuration</p>
+  </div>
+</div>
+<div class="settings-container">
+  <!-- Notifications -->
+  <mat-card appearance="outlined">
+    <mat-card-title>
+      <mat-icon class="title-icon">notifications</mat-icon>
+      Notifications
+    </mat-card-title>
+    <mat-card-content>
+      <div class="setting-item">
+        <div>
+          <h4>Email Notifications</h4>
+          <p>Receive email updates for request status changes</p>
+        </div>
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <h4>Push Notifications</h4>
+          <p>Get instant notifications for important updates</p>
+        </div>
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <h4>Weekly Reports</h4>
+          <p>Receive weekly summary of purchase requests</p>
+        </div>
+        <mat-slide-toggle></mat-slide-toggle>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Security -->
+  <mat-card appearance="outlined">
+    <mat-card-title>
+      <mat-icon class="title-icon">security</mat-icon>
+      Security
+    </mat-card-title>
+    <mat-card-content>
+      <div class="setting-item">
+        <div>
+          <h4>Two-Factor Authentication</h4>
+          <p>Add an extra layer of security to your account</p>
+        </div>
+        <button type="button" mat-stroked-button color="primary">Configure</button>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <h4>Session Timeout</h4>
+          <p>Automatically log out after period of inactivity</p>
+        </div>
+        <button type="button" mat-stroked-button>30 minutes</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Data & Storage -->
+  <mat-card appearance="outlined">
+    <mat-card-title>
+      <mat-icon class="title-icon">storage</mat-icon>
+      Data & Storage
+    </mat-card-title>
+    <mat-card-content>
+      <div class="setting-item">
+        <div>
+          <h4>Export Data</h4>
+          <p>Download all your purchase request data</p>
+        </div>
+        <button type="button" mat-stroked-button color="primary">
+          <mat-icon>download</mat-icon>
+          Export
+        </button>
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <h4>Data Retention</h4>
+          <p>How long to keep completed requests</p>
+        </div>
+        <button type="button" mat-stroked-button>1 year</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
