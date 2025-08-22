@@ -52,8 +52,10 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Overview + some TODOs
 
-## Additional Resources
+This was an interesting and fun project to develop. Although there are still some aspects I would like to improve in the future, I enjoyed working on it and learning along the way.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The layout is quite simple. I didn’t use Tailwind because I would have needed to create design tokens, but I would like to implement it in the future to enhance the interface. Some parts of the implementation could be improved, such as better use of signals in the table. The form design is not very polished yet, and I plan to integrate it more fully with a backend.
+
+Additionally, I would like to make more extensive use of RxJS, which I used sparingly in this project. Finally, I aim to create more elaborate unit tests to improve overall code quality.
