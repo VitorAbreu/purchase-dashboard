@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-  <mat-sidenav opened mode="side">
+  <mat-sidenav #sidenav>
     <div class="logo">
       <mat-icon id="sidenav-icon">shopping_cart_checkout</mat-icon>
       <div class="group-text">
@@ -27,14 +27,14 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <div class="hide-on-lg">
-        <button type="button" mat-icon-button aria-label="menu">
+        <button class="toolbar-toggle" (click)="sidenav.open()" type="button" mat-icon-button aria-label="menu">
           <mat-icon>menu</mat-icon>
         </button>
         <mat-icon id="toolbar-icon">shopping_cart_checkout</mat-icon>
         <span>Purchase Requests</span>
       </div>
       <span class="spacer"></span>
-      <button (click)="toggleTheme()" id="toolbar-toggle" type="button" mat-stroked-button aria-label="menu">
+      <button (click)="toggleTheme()" class="toolbar-toggle" type="button" mat-stroked-button aria-label="menu">
         <mat-icon>{{ theme() === 'dark' ? 'wb_sunny' : 'bedtime' }}</mat-icon
         >{{ theme() === 'dark' ? 'Light' : 'Dark' }}
       </button>

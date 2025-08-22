@@ -42,8 +42,23 @@ table {
     text-overflow: ellipsis;
     max-width: 200px;
   }
-  // .mat-mdc-header-row {
-  // }
+  mat-chip {
+    &[data-status='In Review'] {
+      background-color: var(--color-review);
+    }
+    &[data-status='In Progress'] {
+      background-color: var(--color-progress);
+    }
+    &[data-status='Backlog'] {
+      background-color: var(--color-backlog);
+    }
+    &[data-status='Pending'] {
+      background-color: var(--color-pending);
+    }
+    &[data-status='Done'] {
+      background-color: var(--color-success);
+    }
+  }
 }
 
 @media (width <= 425px) {

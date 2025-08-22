@@ -17,7 +17,7 @@ mat-sidenav {
     #sidenav-icon {
       background-color: var(--color-primary);
       border-radius: 0.5rem;
-      color: white;
+      color: var(--color-white);
       padding: 0.8rem;
       display: flex;
       justify-content: center;
@@ -57,7 +57,7 @@ mat-sidenav {
 
     .activated {
       background-color: var(--color-primary);
-      color: white;
+      color: var(--color-white);
     }
   }
 }
@@ -83,15 +83,15 @@ mat-toolbar {
     flex: 1 1 auto;
   }
 
-  #toolbar-toggle {
+  .toolbar-toggle {
     color: var(--color-text);
   }
 }
 
 @media (1440px > width) {
-  mat-sidenav {
-    display: none;
-  }
+  // mat-sidenav {
+  //   display: none;
+  // }
 
   .hide-on-lg {
     display: flex !important;
