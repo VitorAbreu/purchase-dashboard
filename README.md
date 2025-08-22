@@ -59,3 +59,12 @@ This was an interesting and fun project to develop. Although there are still som
 The layout is quite simple. I didn’t use Tailwind because I would have needed to create design tokens, but I would like to implement it in the future to enhance the interface. Some parts of the implementation could be improved, such as better use of signals in the table. The form design is not very polished yet, and I plan to integrate it more fully with a backend.
 
 Additionally, I would like to make more extensive use of RxJS, which I used sparingly in this project. Finally, I aim to create more elaborate unit tests to improve overall code quality.
+
+## list of completed extensions
+
+1 - used lazy routes
+2 - state managemnt with angular signals with service pattern
+3 - some friendly messages in the form
+4 - theme switcher
+
+live demo in: https://vitorabreu.github.io/purchase-dashboard/
